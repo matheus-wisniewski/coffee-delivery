@@ -2,20 +2,21 @@
 <html lang="en">
 
 <head>
+    @Vite('resources/css/app.css')
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    @vite('/resources/css/app.css')
     <title>Coffe Delivery</title>
+
 </head>
 
-<body>
-    <header>
-        <div>
+<body class="flex-col flex-wrap bg-white w-screen h-screen bg-base-100">
+    <header class="flex items-center justify-around bg-base-100 h-14 gap-2 p-2">
+        <div class="grow-0 shrink-0">
             <img src="/img/coffee_logo.jpg" alt="brand logo">
         </div>
 
-        <nav>
-            <ul>
+        <nav class="hidden md:block grow">
+            <ul class="flex gap-2">
                 <li>Home</li>
                 <li>About</li>
                 <li>Services</li>
@@ -24,26 +25,35 @@
             </ul>
         </nav>
 
-        <div>
+        <div class="flex md:hidden items-center justify-end size-full gap-2">
             <button>
                 <img src="/img/search_icon.png" alt="search icon">
             </button>
             <a href="/login">Entrar</a>
-            </>
         </div>
     </header>
 
-    <main>
-        <h1>Craving the perfect cup of coffee? Our blends are <span>lovely and delicious.</span></h1>
+    <main class="flex-col size-full p-4">
+        <h1 class="text-base-900 text-[48px] leading-[130%] w-full h-[372px] font-Halant font-bold text-center">
+            Craving
+            the perfect cup of
+            coffee?
+            Our blends
+            are
+            <span class="text-primary-red">lovely and delicious.</span>
+        </h1>
 
-        <p>With Coffee Delivery, you can have your coffee delivered to you wherever you are, at any time.</p>
+        <p class="text-base-600">With Coffee Delivery, you can have your coffee delivered to you wherever you are, at
+            any time.</p>
 
-        <p>
-            Our partners:
-            <img src="/img/coffee_partners.svg" alt="coffee partners logo">
-            <img src="/img/coffee_partners.svg" alt="coffee partners logo">
-            <img src="/img/coffee_partners.svg" alt="coffee partners logo">
-        </p>
+        <div class="flex-col items-center h-[101.12px] w-[216px] bg-primary-brown">
+            <p class="bg-primary-red]">Our partners:</p>
+            <div class="flex bg-base-100">
+                <img src="/img/coffee_partners.svg" alt="coffee partners logo">
+                <img src="/img/coffee_partners.svg" alt="coffee partners logo">
+                <img src="/img/coffee_partners.svg" alt="coffee partners logo">
+            </div>
+        </div>
 
 
         <div>
